@@ -1,11 +1,18 @@
 import Ellipsis from "../assets/images/icon-ellipsis.svg";
 import "../styles/SectionData.css";
+import IconExercise from "../assets/images/icon-exercise.svg";
+import IconPlay from "../assets/images/icon-play.svg";
+import IconSocial from "../assets/images/icon-social.svg";
+import IconSC from "../assets/images/icon-self-care.svg";
+import IconStudy from "../assets/images/icon-study.svg";
+import IconWork from "../assets/images/icon-work.svg";
 import { useEffect, useState } from "react";
 
 const SectionData = ({ color, selectTime, title, Data }) => {
   const [currentData, setCurrentData] = useState(0);
   const [previousData, setPreviousData] = useState(0);
   let type = 0;
+
   useEffect(() => {
     if (title === "Work") {
       type = 0;
@@ -20,12 +27,22 @@ const SectionData = ({ color, selectTime, title, Data }) => {
     } else {
       type = 5;
     }
-
-    //console.log(type);
-
+    //`url(${BackgIcon})`
+    console.log(IconPlay);
     setCurrentData((previous) => Data[type].timeframes[selectTime].current);
     setPreviousData((previous) => Data[type].timeframes[selectTime].previous);
   }, [selectTime]);
+
+  const iconMap = {
+    Work: IconWork,
+    Play: IconPlay,
+    Study: IconStudy,
+    Exercise: IconExercise,
+    Social: IconSocial,
+    SelfCare: IconSC,
+  };
+
+  //const icon = iconMap[title];
 
   return (
     <>
@@ -33,9 +50,12 @@ const SectionData = ({ color, selectTime, title, Data }) => {
         <div
           className="cont__data_color"
           style={{
-            backgroundColor: `var(${color})` /*backgroundImage: `url("../assets/images/icon-${work}.svg")`*/,
+            backgroundColor: `var(${color})`,
+            /* backgroundImage: `url(${BackgIcon})`,*/
           }}
-        ></div>
+        >
+          <img src={iconMap[title.replace(" ", "")]} alt="icon_log" />
+        </div>
         <div className="cont__data_datas">
           <div>
             <p className="rubik300">{title}</p>
