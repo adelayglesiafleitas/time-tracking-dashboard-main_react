@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:root {
+  /* ### Primary*/
+
+  --blue: hsl(246, 80%, 60%);
+  --Lightred: hsl(15, 100%, 70%); /* (work)*/
+  --Softblue: hsl(195, 74%, 62%); /*(play)*/
+  --Lightreed: hsl(348, 100%, 68%); /*(study)*/
+  --Limegreen: hsl(145, 58%, 55%); /*(exercise)*/
+  --Violet: hsl(264, 64%, 52%); /*(social)*/
+  --Softorange: hsl(43, 84%, 65%); /*(self care)*/
+
+  /*### Neutral*/
+
+  --Verydarkblue: hsl(226, 43%, 10%);
+  --Darkblue: hsl(235, 46%, 20%);
+  --Desaturatedblue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+body {
+  font-size: 18px; /* (card titles e.g. Work, Play)*/
+  background-color: var(--Verydarkblue);
+}
+
+.rubik300 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.rubik400 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik500 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container__main {
+  margin: 0 auto;
+  width: 1124px;
+  height: 523px;
+  background-color: var(--Verydarkblue);
+  margin-top: 250px;
+  display: flex;
+}
+.container__main_grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container__main {
+    width: 360px;
+    height: 1335px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 78px;
+  }
+  .container__main_grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

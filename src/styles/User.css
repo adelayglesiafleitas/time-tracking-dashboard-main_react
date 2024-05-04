@@ -1,0 +1,119 @@
+.container__User {
+  width: 268px;
+  height: 523px;
+}
+
+.container__User_data {
+  width: 261px;
+  height: 361px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+}
+.container__User_data img {
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+  margin-left: 27px;
+  margin-top: 35px;
+  border: 2px solid var(--PaleBlue);
+  border-radius: 50%;
+}
+.container__User_data p {
+  margin-left: 27px;
+  margin-top: 35px;
+  margin-right: 83px;
+  margin-bottom: 8px;
+  color: var(--PaleBlue);
+  font-size: 0.8em;
+}
+.container__User_data h1 {
+  color: white;
+  margin-left: 27px;
+  margin-right: 83px;
+  font-size: 1.9em;
+}
+.container__User_list {
+  width: 261px;
+  height: 190px;
+  background-color: var(--Darkblue);
+  border-radius: 10px;
+  transform: translateY(310px);
+  position: relative;
+  z-index: 1;
+}
+ol {
+  list-style: none;
+}
+li {
+  margin-top: 25px;
+  color: var(--PaleBlue);
+  cursor: pointer;
+  transition: color 1s ease;
+}
+li:hover {
+  color: white;
+}
+.list {
+  transform: translate(25px, 45px);
+}
+
+@media only screen and (max-width: 1440px) {
+  .container__User {
+    width: 333px;
+    height: 209px;
+  }
+  .container__User_data {
+    width: 333px;
+    height: 140px;
+    flex-direction: row;
+  }
+  .container__User_data img {
+    width: 73px;
+    height: 73px;
+  }
+  .container__User_data p {
+    margin-left: 23px;
+    margin-top: 45px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    color: var(--PaleBlue);
+    font-size: 0.8em;
+  }
+  .container__User_data h1 {
+    color: white;
+    font-size: 1em;
+    margin-right: 1px;
+  }
+  .container__User_data_movile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transform: translateY(-25px);
+  }
+  .container__User_list {
+    width: 333px;
+    height: 90px;
+    margin-bottom: 120px;
+    
+
+    transform: translateY(120px);
+    position: relative;
+    z-index: 1;
+  }
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    margin-right: 60px; /* Añade un margen entre los elementos */
+  }
+
+  
+}
