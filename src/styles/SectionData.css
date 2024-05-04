@@ -16,6 +16,9 @@
   height: 125px;
   border-radius: 10px;
 }
+.cont__data_color img {
+  transform: translateX(160px);
+}
 .cont__data_datas {
   background-color: var(--Darkblue);
   width: 260px;
@@ -60,7 +63,7 @@ h2 {
     margin-top: 1px;
   }
   .cont__data_datas {
-    width: 336px;
+    width: 332px;
     height: 141px;
     border-radius: 10px;
     transform: translateY(-100px);
@@ -82,5 +85,8 @@ h2 {
   .p__movile {
     display: inline;
     margin-left: 59px;
+  }
+  .cont__data_color img {
+    transform: translateX(120px);
   }
 }

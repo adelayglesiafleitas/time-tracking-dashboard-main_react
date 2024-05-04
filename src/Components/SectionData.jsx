@@ -42,8 +42,6 @@ const SectionData = ({ color, selectTime, title, Data }) => {
     SelfCare: IconSC,
   };
 
-  //const icon = iconMap[title];
-
   return (
     <>
       <article className="cont__data">
@@ -51,7 +49,6 @@ const SectionData = ({ color, selectTime, title, Data }) => {
           className="cont__data_color"
           style={{
             backgroundColor: `var(${color})`,
-            /* backgroundImage: `url(${BackgIcon})`,*/
           }}
         >
           <img src={iconMap[title.replace(" ", "")]} alt="icon_log" />
