@@ -55,10 +55,11 @@ h2 {
     margin-top: 1px;
   }
   .cont__data_datas {
-    width: 333px;
+    width: 336px;
     height: 141px;
     border-radius: 10px;
     transform: translateY(-100px);
+
     margin-bottom: 0px;
   }
   .cont__data_datas div {
