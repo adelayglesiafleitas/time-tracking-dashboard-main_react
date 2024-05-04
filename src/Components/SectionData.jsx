@@ -32,7 +32,9 @@ const SectionData = ({ color, selectTime, title, Data }) => {
       <article className="cont__data">
         <div
           className="cont__data_color"
-          style={{ backgroundColor: `var(${color})` }}
+          style={{
+            backgroundColor: `var(${color})` /*backgroundImage: `url("../assets/images/icon-${work}.svg")`*/,
+          }}
         ></div>
         <div className="cont__data_datas">
           <div>
@@ -40,7 +42,9 @@ const SectionData = ({ color, selectTime, title, Data }) => {
             <img src={Ellipsis} alt="icon" />
           </div>
           <h2 className="rubik300">{currentData}Hrs</h2>
-          <p className="rubik300 p_time p__movile">Last-week-{previousData}hrs</p>
+          <p className="rubik300 p_time p__movile">
+            Last-week-{previousData}hrs
+          </p>
         </div>
       </article>
     </>

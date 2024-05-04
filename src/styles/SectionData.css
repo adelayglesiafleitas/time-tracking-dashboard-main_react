@@ -7,6 +7,11 @@
 }
 .cont__data_color {
   background-color: var(--Lightred);
+  color: var(--White);
+  /*background-image: url("../assets/images/icon-work.svg");
+  background-position-x: 150px; 
+  background-repeat: no-repeat;
+  */
   width: 260px;
   height: 125px;
   border-radius: 10px;
@@ -37,7 +42,7 @@ h2 {
   font-size: 0.8em;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1439px) {
   .cont__data_color {
     width: 333px;
     height: 140px;
